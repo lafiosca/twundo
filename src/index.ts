@@ -37,6 +37,7 @@ require('./like');
 				failedCount += 1;
 			}
 		}
+		await new Promise((resolve) => setTimeout(resolve, 500));
 	}
 	console.log(`Unliked count: ${unlikedCount}`);
 	console.log(`Not found count: ${notFoundCount}`);
